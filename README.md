@@ -10,9 +10,9 @@
 npx skills add Chendestiny/humanizer-zh-plus
 ```
 
-**方式一 · de-ai 流水线组件**：
+**方式二 · de-ai 流水线组件**：
 
-装 [de-ai-skills](https://github.com/Chendestiny/de-ai-skills) 后，中文主改写自动路由到本技能（缺则降级 humanizer-zh）。
+装 [de-ai-skills](https://github.com/Chendestiny/de-ai-skills) 后，中文主改写自动路由到本技能（缺则降级 humanizer-zh）。注意中文侧是 `humanizer-zh`（24 类基座）+ 本技能（25-33 与场景纪律）两份同载——本技能刻意不重复收录基座规则。
 
 ## 它比 humanizer-zh 多了什么
 

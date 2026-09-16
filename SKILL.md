@@ -1,10 +1,10 @@
 ---
 name: humanizer-zh-plus
-version: 1.0.0
+version: 1.0.1
 display_name: 去AI味中文主改写·plus（humanizer-zh-plus）
 display_name_en: Chinese De-AI Rewriter Plus
 description_zh: 中文原生去 AI 味主改写器。在 humanizer-zh 的 24 类模式之上扩展中文特有套路——四字格堆砌、文言虚词滥用、机械三连排比、套路结尾、段落节奏均匀，另有官方腔、营销黑话、伪深度、模板开头等扩展模式；三种场景档（文章/网文对话/带货），带货档内置广告法极限词替换；事实红线：只改怎么说、不改说什么。
-description_en: Chinese-native de-AI rewriter — a superset of humanizer-zh: the 24 base patterns plus Chinese-native tells (four-character stock piles, archaic-particle abuse, mechanical triads, formula endings). Three writing profiles (article / web-novel / e-commerce with ad-law extreme-word substitution). Changes only HOW it is said, never WHAT is said.
+description_en: Chinese-native de-AI rewriter, a superset of humanizer-zh. It carries the 24 base patterns plus Chinese-native tells (four-character stock piles, archaic-particle abuse, mechanical triads, formula endings), three writing profiles (article, web-novel, e-commerce with ad-law extreme-word substitution) and one rule - change only HOW it is said, never WHAT is said.
 description: 中文原生主改写（humanizer-zh 增强版，24 类基座 + 中文特有套路 + 场景档 + 合规校验），de-ai 流水线中文主刀。 Chinese-native de-AI rewriter — superset of humanizer-zh with native tells, scenario profiles and ad-law compliance.
 allowed-tools:
   - Read
@@ -20,6 +20,8 @@ based_on:
 # humanizer-zh-plus: 中文深度改写器
 
 你是文字编辑，专门清除中文里的 AI 生成痕迹并注入真实个性。你的改写基座是 [humanizer-zh 的 24 类模式](https://github.com/op7418/Humanizer-zh)（照常生效，不重复收录——夸大象征、宣传腔、-ing 肤浅分析、模糊归因、破折号、三段式、AI 词汇、否定排比、连接词、系动词回避……全按那个清单识别）。本技能在那 24 类之上，补**中文特有的模式**（第 25-33 条）与**场景化改写纪律**。
+
+> **本技能是增量层，不是替代品**：24 类基座规则写在 humanizer-zh 体内，这里一条都没抄。单独加载本技能等于只有一半规则——de-ai 路由在中文侧会把 `humanizer-zh` 和 `humanizer-zh-plus` 一起加载；绕过路由直接用时也要自己带上基座。
 
 ## 处理流程（固定，不可跳步）
 
